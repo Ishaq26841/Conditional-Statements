@@ -1,0 +1,42 @@
+temperature = int(input("Enter Today's temperature in celsius."))
+
+if temperature <20 :
+    outfit = "jacket"
+    print("it is cold today.")
+    print("Wear a ", outfit)
+else:
+    outfit = "T-Shirt"
+    print("wear a ", outfit)
+
+is_raining = input("Is It Raining today? (yes/no)") 
+
+if is_raining == "yes":
+    print("Bring An Umbrella!")
+
+wind_speed = int(input("enter the wind speed in km/h: " ))
+
+if wind_speed >30 : 
+    needs_windbreaker = "yes"
+    print("it is windy today.")
+    print("wear a windbreaker over your", outfit)
+
+else: 
+    needs_windbreaker = "no"
+    print("it is calm today.")
+    print("No. you dont need a windbreaker over your", outfit)
+
+has_puddles = input("Are there Any Puddles in the ground? (yes/no:) ")
+if has_puddles == "yes":
+    Shoes = "boots"
+    print("Wear your", Shoes)
+else:
+    shoes = "Sneakers"
+    print("Wear your", shoes)
+    print("wear", shoes)
+
+print("-----WEATHER OUTFIT PICKER----")
+print("temperature:", temperature)
+print("Outfit Chosen :", outfit)
+print("Raining :", is_raining)
+print("WindBreaker Needed:", needs_windbreaker)
+
